@@ -1,5 +1,6 @@
 from django.urls import path
+from .views import listar_categorias
 
 urlpatterns =[
-    # path('categorias', nome_da_função)
+    path('categorias', listar_categorias)
 ]
