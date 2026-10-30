@@ -33,6 +33,3 @@ def listar_produtos(request):
         else:
             return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET', 'PATCH'])
-def detalhe_produto(request, pk):
-    
